@@ -21,7 +21,7 @@ public class CarInspection extends Car{
 
             if (getGTc() / 2 > getRemainder()) {
                 System.out.println("GTc меньше половины. Вам нужна полная заправка.");
-                refuel = fillTheTank(distance);
+                refuel = fillTheGTc(distance);
             } else {
                 System.out.println("Нужно заправиться\n: " + tmpFuel + "l");
                 setRemainder(getRemainder() + tmpFuel);
