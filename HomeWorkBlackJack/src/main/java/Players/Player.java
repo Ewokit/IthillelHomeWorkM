@@ -57,6 +57,7 @@ public class Player {
         return defeatCounter;
     }
 
+
     public void setDefeatCounter(int defeatCounter) {
         this.defeatCounter = defeatCounter;
     }

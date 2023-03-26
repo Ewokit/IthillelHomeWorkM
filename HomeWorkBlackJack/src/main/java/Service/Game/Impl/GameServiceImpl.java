@@ -24,6 +24,7 @@ public class GameServiceImpl implements GameService {
     private final LogServiceImpl LOG_SERVICE;
     private final ErrorServiceImpl ERROR_SERVICE;
 
+
     public GameServiceImpl(ResourceBundle resourceBundle) {
         this.RESOURCE_BUNDLE = resourceBundle;
         this.ROUND_SERVICE = new RoundServiceImpl(resourceBundle);

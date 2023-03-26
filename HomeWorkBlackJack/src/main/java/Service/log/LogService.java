@@ -2,7 +2,7 @@ package Service.log;
 
 import Players.Player;
 
-public interface  LogService {
+public interface LogService {
     void createLog(String name, int numberRounds);
 
     void startLog(int roundCounter);

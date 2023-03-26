@@ -6,7 +6,7 @@ import Service.log.LogService;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-public class LogServiceImpl implements LogService {
+public class LogServiceImpl  implements LogService {
     private final Logger INFO = Logger.getLogger("Info.log");
     private final ResourceBundle RESOURCE_BUNDLE;
 

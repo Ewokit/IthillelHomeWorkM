@@ -4,7 +4,7 @@ import exception.NumberException;
 
 import java.io.IOException;
 
-public interface  ErrorService {
+public interface ErrorService {
     void StateExceptionLog(String string);
 
     void numberRoundsException(NumberException exception);

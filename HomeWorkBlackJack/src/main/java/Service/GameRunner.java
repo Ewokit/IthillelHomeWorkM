@@ -7,7 +7,7 @@ import Service.Game.Impl.RoundServiceImpl;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class  GameRunner {
+public class GameRunner {
     public static void main(String[] args) {
         ResourceBundle resourceBundle = getBundle(args);
         GameServiceImpl gameService = new GameServiceImpl(resourceBundle);

@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-public class ErrorServiceImpl implements ErrorService {
+public class ErrorServiceImpl  implements ErrorService {
     private final Logger ERROR = Logger.getLogger("error.Log");
     private final ResourceBundle RESOURCE_BUNDLE;
 

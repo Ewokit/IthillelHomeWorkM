@@ -2,7 +2,7 @@ package Service.Game;
 
 import Players.Player;
 
-public interface  GameService {
+public interface GameService {
     void start();
     void createNewGame(String[] strings);
     void save(Player player);

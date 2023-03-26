@@ -20,7 +20,6 @@ public class RoundServiceImpl implements RoundService {
         this.ERROR_SERVICE = new ErrorServiceImpl(resourceBundle);
         this.RESOURCE_BUNDLE = resourceBundle;
     }
-
     @Override
     public int start(int round) {
         int playerShape = playerTurn(round);
