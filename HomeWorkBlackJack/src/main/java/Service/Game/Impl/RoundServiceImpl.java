@@ -15,10 +15,10 @@ public class RoundServiceImpl implements RoundService {
     private final ErrorServiceImpl ERROR_SERVICE;
     private final ResourceBundle RESOURCE_BUNDLE;
 
-    public RoundServiceImpl(ResourceBundle RESOURCE_BUNDLE) {
-        this.LOG_SERVICE = INFO_LOG_SERVICE;
-        this.ERROR_SERVICE = ERROR_LOG_SERVICE;
-        this.RESOURCE_BUNDLE = RESOURCE_BUNDLE;
+    public RoundServiceImpl(ResourceBundle resourceBundle) {
+        this.LOG_SERVICE = new LogServiceImpl(resourceBundle);
+        this.ERROR_SERVICE = new ErrorServiceImpl(resourceBundle);
+        this.RESOURCE_BUNDLE = resourceBundle;
     }
 
     @Override

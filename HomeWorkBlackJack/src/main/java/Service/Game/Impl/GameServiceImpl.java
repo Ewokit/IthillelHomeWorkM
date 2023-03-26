@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import static java.lang.System.exit;
+import static java.lang.System.mapLibraryName;
 
 public class GameServiceImpl implements GameService {
     private final Scanner scanner = new Scanner(System.in);

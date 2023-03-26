@@ -11,7 +11,7 @@ import java.nio.file.Path;
 import java.util.List;
 import java.time.LocalDateTime;
 
-public class Runner {
+public class RunnerJsonYaml {
     private static final String YAML = "yaml";
     private static final String JSON = "json";
     private static final FileInterface FILE_INTERFACE = new FileInterfaceImpl();

@@ -38,7 +38,7 @@ public class FileServiceImpl implements FileService {
             OutputStream outputStream = new FileOutputStream(file, app);
             outputStream.write(str.getBytes(StandardCharsets.UTF_8));
             outputStream.close();
-        } catch (IOException exception){
+        } catch  (IOException exception){
             ERROR_SERVICE.ioException(exception);
         }
     }

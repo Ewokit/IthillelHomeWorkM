@@ -17,21 +17,21 @@ public class ErrorServiceImpl implements ErrorService {
 
     @Override
     public void StateExceptionLog(String string) {
-        ERROR.error(String(new IllegalStateException("value" + string)));
+        ERROR.warning(String.valueOf(new IllegalStateException("value" + string)));
     }
 
     @Override
     public void numberRoundsException(NumberException exception) {
-        ERROR.error(exception.getMessage());
+        ERROR.warning(exception.getMessage());
     }
 
     @Override
     public void numberFormatException(NumberFormatException exception) {
-        ERROR.error(exception.getClass().getName().concat(":").concat(exception.getMessage()))
+        ERROR.warning(exception.getClass().getName().concat(":").concat(exception.getMessage()));
     }
 
     @Override
     public void ioException(IOException exception) {
-        ERROR.error(exception.getClass().getName().concat(":").concat(exception.getMessage()));
+        ERROR.warning(exception.getClass().getName().concat(":").concat(exception.getMessage()));
     }
 }

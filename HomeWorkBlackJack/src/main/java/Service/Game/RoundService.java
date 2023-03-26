@@ -1,6 +1,6 @@
 package Service.Game;
 
-public interface RoundService {
+public  interface RoundService {
     int start(int round);
 
     int playerTurn(int round);

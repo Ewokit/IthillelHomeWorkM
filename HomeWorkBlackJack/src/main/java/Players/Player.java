@@ -7,6 +7,12 @@ public class Player {
     private int victoryCounter;
     private int defeatCounter;
 
+    public Player(){
+        this.roundsCounter = 0;
+        this.victoryCounter = 0;
+        this.defeatCounter = 0;
+    }
+
     public Player(char clear) {
         this.name = "";
         this.totalRounds = 0;

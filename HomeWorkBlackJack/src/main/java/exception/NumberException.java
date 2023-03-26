@@ -5,6 +5,6 @@ public class NumberException extends RuntimeException {
         System.err.println("Number rounds must be > 0");
     }
     public String getMessage(){
-        return NumberFormatException.class.getName().concat(":").concat("Number rounds must be > 0");
+        return NumberFormatException.class.getName().concat(" : ").concat("Number rounds must be > 0");
     }
 }
